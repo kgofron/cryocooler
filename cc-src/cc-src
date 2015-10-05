@@ -1,0 +1,144 @@
+ +0.0   PV_FT18 REAL 0.000000e+000 OUT /LN2 Flow
+ +4.0   PV_LN2_FREQ REAL 0.000000e+000 OUT /Actual Value LN2-Pump Frequency
+ +8.0   POWER REAL 0.000000e+000 OUT /LN2 Cooling Power
+ +12.0   PV_LT19 REAL 0.000000e+000 OUT /Subcooler Fill Level
+ +16.0   HL1_EXT_LT19 REAL 0.000000e+000 IN /High Set Point Subcooler Level
+ +20.0   LL1_EXT_LT19 REAL 0.000000e+000 IN /Low Set Point Subcooler Level
+ +24.0   PV_LT23 REAL 0.000000e+000 OUT /Heater Vessel Fill Level
+ +28.0   HL1_EXT_LT23 REAL 0.000000e+000 IN /High Set Point Heater Vessel Level
+ +32.0   LL1_EXT_LT23 REAL 0.000000e+000 IN /Low Set Point Heater Vessel Level
+ +36.0   PV_PT1 REAL 0.000000e+000 OUT /Consumer Feed Line Pressure
+ +40.0   HL1_EXT_PT1 REAL 0.000000e+000 IN /High Set Point Consumer Feed Line Pressure
+ +44.0   Reserve01 REAL 0.000000e+000 free
+ +48.0   LL1_EXT_PT1 REAL 0.000000e+000 IN /Low Set Point Consumer Feed Line Pressure
+ +52.0   Reserve02 REAL 0.000000e+000 free
+ +56.0   PV_PT3 REAL 0.000000e+000 OUT /Consumer Return Line Pressure
+ +60.0   HL1_EXT_PT3 REAL 0.000000e+000 IN /High Set Point Consumer Return Line Pressure
+ +64.0   Reserve03 REAL 0.000000e+000 free
+ +68.0   LL1_EXT_PT3 REAL 0.000000e+000 IN /Low Set Point Consumer Return Line Pressure
+ +72.0   Reserve04 REAL 0.000000e+000 free
+ +76.0   PV_T5 REAL 0.000000e+000 OUT /Consumer Feed Line Temperature
+ +80.0   HL1_EXT_T5 REAL 0.000000e+000 IN /High Set Point Consumer Feed Line Temperature
+ +84.0   LL1_EXT_T5 REAL 0.000000e+000 IN /Low Set Point Consumer Feed Line Temperature
+ +88.0   PV_T6 REAL 0.000000e+000 OUT /Consumer Return Line Temperature
+ +92.0   HL1_EXT_T6 REAL 0.000000e+000 IN /High Set Point Consumer Return Line Temperature
+ +96.0   LL1_EXT_T6 REAL 0.000000e+000 IN /Low Set Point Consumer Return Line Temperature
+ +100.0   MV_MAN_V10 REAL 0.000000e+000 IN /Settable Aperture Value of the Bypass Valve V10
+ +104.0   Reserve05 REAL 0.000000e+000 free
+ +108.0   Q_MV_SCALE_V10 REAL 0.000000e+000 OUT /Bypass Valve Scaled Aperture
+ +112.0   MV_MAN_V11 REAL 0.000000e+000 IN /Settable Aperture Value of the Return Line Valve V11
+ +116.0   Reserve06 REAL 0.000000e+000 free
+ +120.0   Q_MV_SCALE_V11 REAL 0.000000e+000 OUT /Return Line Valve Scaled Aperture
+ +124.0   MV_MAN_V17 REAL 0.000000e+000 IN /Settable Aperture Value of the Venting Valve V17
+ +128.0   Reserve07 REAL 0.000000e+000 free
+ +132.0   Q_MV_SCALE_V19 REAL 0.000000e+000 OUT /Subcooler FillValve Scaled Aperture
+ +136.0   C_CTRL_SP_INT REAL 0.000000e+000 IN /Set Point Value Heater Vessel Pressure PT3
+ +140.0   C_CTRL_PV REAL 0.000000e+000 OUT /Heater Vessel Pressure
+ +144.0   Reserve08 REAL 0.000000e+000 free
+ +148.0   Reserve09 REAL 0.000000e+000 free
+ +152.0   Reserve10 REAL 0.000000e+000 free
+ +156.0   Reserve11 REAL 0.000000e+000 free
+ +160.0   Reserve12 REAL 0.000000e+000 free
+ +164.0   Reserve13 INT 0 free
+ +166.0   T5ActualValueFault BOOL FALSE OUT /T5 Feed Line Temperature Sensor Fault
+ +166.1   T6ActualValueFault BOOL FALSE OUT /T6 Return Line Temperature Sensor Fault
+ +166.2   PT1ActualValueFault BOOL FALSE OUT /PT1 Feed Line Pressure Sensor Fault
+ +166.3   PT3ActualValueFault BOOL FALSE OUT /PT3 Heater Vessel Pressure Sensor Fault
+ +166.4   LT19ActualValueFault BOOL FALSE OUT /LT19 Subcooler LN2 Level Sensor Fault
+ +166.5   LT23ActualValueFault BOOL FALSE OUT /LT23 Heater Vessel LN2 Level Sensor Fault
+ +166.6   FT18ActualValueFault BOOL FALSE OUT /FT18 LN2 Flow Sensor Fault
+ +166.7   LN2FreqActValueFault BOOL FALSE IN /LN2 Concerter Frequency Input Sensor Fault
+ +167.0   LN2FreqCtrlValueFault BOOL FALSE OUT /LN2 Concerter Frequency Output Sensor Fault
+ +167.1   V10ControlValueFault BOOL FALSE OUT /V10 Regulated Bypass Valve Control Fault
+ +167.2   V11ControlValueFault BOOL FALSE OUT /V11 Regulated Return Line Valve Control Fault
+ +167.3   V19ControlValueFault BOOL FALSE OUT /V19 Regulated Subcooler Fill Valve Control Fault
+ +167.4   AIR_PRESSURE_OK BOOL FALSE Air Pressure is Connected (E0.3)
+ +167.5   SENSOR_CABLE_CON_OK BOOL FALSE D-Sub37 Sensor Cable is Connected (E0.2)
+ +167.6   VALVE_CABLE_CON_OK BOOL FALSE D-Sub25 Valve Cable is Connected (E0.1)
+ +167.7   Reserve14 BOOL FALSE free
+ +168.0   Q_OP_STATE_V9 INT 0 OUT /Status Feed Line Valve
+ +170.0   Q_OP_STATE_V15 INT 0 OUT /Status Heater Vessel Fill Valve
+ +172.0   Q_OP_STATE_V17_35 INT 0 OUT /Status Vent 35% Valve
+ +174.0   Q_OP_STATE_V20 INT 0 OUT /Status Heater Vessel Vent Valve
+ +176.0   Q_OP_STATE_V21 INT 0 OUT /Status Consumer Purge Valve
+ +178.0   StateVentPipe INT 0 OUT /Status Vent Pipe Heater
+ +180.0   Q_OP_STATE_LN2 INT 0 OUT /Status LN2-Pump
+ +182.0   Q_OP_STATE_V10 INT 0 OUT /Bypass Valve Status
+ +184.0   Q_OP_STATE_V11 INT 0 OUT /Return Line Valve Status
+ +186.0   Q_OP_STATE_V19 INT 0 OUT /Subcooler Fill Valve Status
+ +188.0   COOL_DOWN_STAT INT 0 OUT / State 0->OFF, 1->ON, 2-> FAULT
+ +190.0   ValveManOnV9 BOOL FALSE IN /Open Feed Line Valve
+ +190.1   ValveManOffV9 BOOL FALSE IN /Close Feed Line Valve
+ +190.2   ValveManOnV15 BOOL FALSE IN /Open Heater Vessel Fill Valve
+ +190.3   ValveManOffV15 BOOL FALSE IN /Close Heater Vessel Fill Valve
+ +190.4   ACTION_REQUEST_BIT BOOL FALSE IN /Set "true" when a parameter was changed /
+ +190.5   Reserve15 BOOL FALSE free
+ +190.6   ValveManOnV20 BOOL FALSE IN /Open Heater Vessel Vent Valve
+ +190.7   ValveManOffV20 BOOL FALSE IN /Close Heater Vessel Vent Valve
+ +191.0   ValveManOnV21 BOOL FALSE IN /Open Consumer Purge Valve
+ +191.1   ValveManOffV21 BOOL FALSE IN /Close Consumer Purge Valve
+ +191.2   CONV_LC_OFF BOOL FALSE IN /LN2-Pump Frequency Converter OFF
+ +191.3   CONV_LC_ON BOOL FALSE IN /LN2-Pump Frequency Converter ON
+ +191.4   VentPipeManOff BOOL FALSE IN /Turns the Vent Pipe Heating OFF
+ +191.5   VentPipeManOn BOOL FALSE IN /Turns the Vent Pipe Heating ON
+ +191.6   VentPipeOn BOOL FALSE OUT /Status Vent Pipe Heater Output A0.7
+ +191.7   C_CTRL_AUT BOOL FALSE IN /Turns the Heater Pressure Control ON (true)/OFF(false)
+ +192.0   Stop_ON BOOL FALSE OUT /CC controller is in status "stop"
+ +192.1   FillSubCoolON BOOL FALSE IN /Starts the subcooler filling up to the preset value
+ +192.2   Stop_BUTTON BOOL FALSE IN /Turns the STOP Function ON
+ +192.3   CC_NO_ALARM BOOL FALSE OUT /ALARM Output to an External Device (A1.2)
+ +192.4   CC_ENABLE BOOL FALSE IN /Enable Input from an External Device (E0.0)
+ +192.5   CC_READY BOOL FALSE OUT /READY Output to an External Device (A1.1)
+ +192.6   ValveManOnV17_35 BOOL FALSE IN / Open Vent Valve 35%
+ +192.7   ValveManOffV17_35 BOOL FALSE IN / Close Vent Valve 35%
+ +193.0    LT19_H_LIM_Value_Tripped BOOL FALSE OUT /Subcooler Ln2 level > set point level
+ +193.1    LT19_L_LIM_Value_Tripped BOOL FALSE OUT /Subcooler Ln2 level < set point level
+ +193.2   LT19_H_Al_Value_Tripped BOOL FALSE OUT /Subcooler Ln2 level > alarm point level
+ +193.3   LT19_L_Al_Value_Tripped BOOL FALSE OUT /Subcooler Ln2 level < alarm point level
+ +193.4    LT23_H_LIM_Value_Tripped BOOL FALSE OUT /Heater vessel Ln2 level > set point level
+ +193.5    LT23_L_LIM_Value_Tripped BOOL FALSE OUT /Heater vessel Ln2 level < set point level
+ +193.6   LT23_H_Al_Value_Tripped BOOL FALSE OUT /Heater vessel Ln2 level > alarm point level
+ +193.7   LT23_L_Al_Value_Tripped BOOL FALSE OUT /Heater vessel Ln2 level < alarm point level
+ +194.0   T5_H_LIM_Value_Tripped BOOL FALSE OUT /Feed line Ln2 temperature > set point temperature
+ +194.1   T5_L_LIM_Value_Tripped BOOL FALSE OUT /Feed line Ln2 temperature < set point temperature
+ +194.2   T6_H_LIM_Value_Tripped BOOL FALSE OUT /Return line Ln2 temperature > set point temperature
+ +194.3   T6_L_LIM_Value_Tripped BOOL FALSE OUT /Return line Ln2 temperature < set point temperature
+ +194.4   PT1_H_LIM_Value_Tripped BOOL FALSE OUT /Feed Line Pressure > set point level
+ +194.5   PT1_L_LIM_Value_Tripped BOOL FALSE OUT /Feed Line Pressure < set point level
+ +194.6   PT3_H_LIM_Value_Tripped BOOL FALSE OUT /Return Line Pressure > set point level
+ +194.7   PT3_L_LIM_Value_Tripped BOOL FALSE OUT /Return Line Pressure < set point level
+ +195.0   COOL_DOWN_ON BOOL FALSE IN /Starts automatic procedure COOL DOWN
+ +195.1   WARM_UP_ON BOOL FALSE IN /Starts automatic procedure WARM UP
+ +195.2   REFILL_HEATVES_ON BOOL FALSE IN /Starts automatic procedure REFILL HEATER VESSEL
+ +195.3   HEATVES_AUTOREFILL_ENA BOOL FALSE OUT /State External Auto Refill Enable Input (E0.5)
+ +195.4   LT23_AUTOREFILL_ON BOOL FALSE OUT /State Auto Refill ON
+ +195.5   LT23_AUTOREFILL_BUTTON BOOL FALSE OUT /State Auto Refill Button
+ +196.0   WARM_UP_STAT INT 0 OUT / State 0->OFF, 1->ON, 2-> FAULT
+ +198.0   REFILL_HEATVES_STAT INT 0 OUT / State 0->OFF, 1->ON, 2-> FAULT
+ +200.0   Q_OP_STATE_V17_100 INT 0 OUT /Status Vent 100% Valve
+ +202.0   Reserve17 INT 0 free
+ +204.0   Reserve18 INT 0 free
+ +206.0   ValveManOnV17_100 BOOL FALSE IN / Open Vent Valve 100%
+ +206.1   ValveManOffV17_100 BOOL FALSE IN / Close Vent Valve 100%
+ +206.2   Reserve21 BOOL FALSE free
+ +206.3   Reserve22 BOOL FALSE free
+ +206.4   Reserve23 BOOL FALSE free
+ +206.5   Reserve24 BOOL FALSE free
+ +206.6   Reserve25 BOOL FALSE free
+ +206.7   Reserve26 BOOL FALSE free
+ +207.0   Reserve27 BOOL FALSE free
+ +207.1   Reserve28 BOOL FALSE free
+ +207.2   Reserve29 BOOL FALSE free
+ +207.3   Reserve30 BOOL FALSE free
+ +207.4   Reserve31 BOOL FALSE free
+ +207.5   Reserve32 BOOL FALSE free
+ +207.6   Reserve33 BOOL FALSE free
+ +207.7   Reserve34 BOOL FALSE free
+ +208.0   Reserve35 REAL 0.000000e+000 free
+ +212.0   Reserve36 REAL 0.000000e+000 free
+ +216.0   Reserve37 REAL 0.000000e+000 free
+ +220.0   Reserve38 REAL 0.000000e+000 free
+ +224.0   Reserve39 REAL 0.000000e+000 free
+ +228.0   Reserve40 REAL 0.000000e+000 free
+ +232.0   Reserve41 REAL 0.000000e+000 free
+ +236.0   Reserve42 REAL 0.000000e+000 free

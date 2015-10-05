@@ -1,0 +1,1 @@
+perl -ne '/cmdTable\.put\(\"(.*)\"\,(.*)\)/; print "CC,\t$1,\t$2\n"' < a > b

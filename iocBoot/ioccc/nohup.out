@@ -1,0 +1,453 @@
+dbLoadTemplate: Too many values given, line 36.
+Starting iocInit
+iocRun: All initialization complete
+#!../../bin/linux-x86/cc
+< envPaths
+epicsEnvSet("ARCH","linux-x86")
+epicsEnvSet("IOC","ioccc")
+epicsEnvSet("TOP","/home/epics/src/cc")
+epicsEnvSet("EPICS_BASE","/usr/lib/epics")
+epicsEnvSet("STREAM_PROTOCOL_PATH","/home/epics/src/cc/ccApp/Db")
+cd /home/epics/src/cc
+# Register all support components
+dbLoadDatabase dbd/cc.dbd
+cc_registerRecordDeviceDriver(pdbbase) 
+drvAsynIPPortConfigure CC, 10.0.14.209:2000
+dbLoadTemplate ccApp/Db/cc.subs, PORT=CC
+#asynSetTraceMask CC , -1, 0x9
+#ynSetTraceIOMask CC, -1, 0x2
+iocInit()
+############################################################################
+## EPICS R3.14.12.3-6 $Date: Mon 2012-12-17 14:11:47 -0600$
+## EPICS Base built May 22 2013
+############################################################################
+epics> [31;1m2014/07/08 16:37:52.169545 CC CC:C_CTRL_PV: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.169644 CC CC:C_CTRL_PV: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.169672 CC CC:C_CTRL_PV: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.170613 CC CC:C_CTRL_SP_INT: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.170636 CC CC:C_CTRL_SP_INT: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.170658 CC CC:C_CTRL_SP_INT: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.171665 CC CC:HL1_EXT_LT19: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.171687 CC CC:HL1_EXT_LT19: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.171709 CC CC:HL1_EXT_LT19: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.172726 CC CC:HL1_EXT_LT23: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.172747 CC CC:HL1_EXT_LT23: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.172769 CC CC:HL1_EXT_LT23: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.173791 CC CC:HL1_EXT_PT1: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.173814 CC CC:HL1_EXT_PT1: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.173835 CC CC:HL1_EXT_PT1: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.174852 CC CC:HL1_EXT_PT3: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.174874 CC CC:HL1_EXT_PT3: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.174895 CC CC:HL1_EXT_PT3: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.175914 CC CC:HL1_EXT_T5: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.175935 CC CC:HL1_EXT_T5: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.175956 CC CC:HL1_EXT_T5: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.176979 CC CC:HL1_EXT_T6: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.177002 CC CC:HL1_EXT_T6: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.177023 CC CC:HL1_EXT_T6: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.178041 CC CC:LL1_EXT_LT19: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.178062 CC CC:LL1_EXT_LT19: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.178083 CC CC:LL1_EXT_LT19: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.179103 CC CC:LL1_EXT_LT23: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.179124 CC CC:LL1_EXT_LT23: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.179146 CC CC:LL1_EXT_LT23: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.180165 CC CC:LL1_EXT_PT1: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.180187 CC CC:LL1_EXT_PT1: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.180208 CC CC:LL1_EXT_PT1: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.181229 CC CC:LL1_EXT_PT3: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.181252 CC CC:LL1_EXT_PT3: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.181273 CC CC:LL1_EXT_PT3: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.182288 CC CC:LL1_EXT_T5: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.182310 CC CC:LL1_EXT_T5: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.182331 CC CC:LL1_EXT_T5: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.183350 CC CC:LL1_EXT_T6: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.183372 CC CC:LL1_EXT_T6: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.183393 CC CC:LL1_EXT_T6: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.184413 CC CC:MV_MAN_V10: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.184434 CC CC:MV_MAN_V10: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.184455 CC CC:MV_MAN_V10: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.185480 CC CC:MV_MAN_V11: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.185504 CC CC:MV_MAN_V11: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.185525 CC CC:MV_MAN_V11: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.186542 CC CC:MV_MAN_V17: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.186563 CC CC:MV_MAN_V17: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.186585 CC CC:MV_MAN_V17: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.187604 CC CC:POWER: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.187626 CC CC:POWER: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.187647 CC CC:POWER: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.188666 CC CC:PV_FT18: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.188688 CC CC:PV_FT18: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.188709 CC CC:PV_FT18: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.189730 CC CC:PV_LN2_FREQ: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.189753 CC CC:PV_LN2_FREQ: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.189774 CC CC:PV_LN2_FREQ: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.190791 CC CC:PV_LT19: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.190812 CC CC:PV_LT19: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.190833 CC CC:PV_LT19: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.191851 CC CC:PV_LT23: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.191873 CC CC:PV_LT23: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.191894 CC CC:PV_LT23: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.192916 CC CC:PV_PT1: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.192938 CC CC:PV_PT1: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.192959 CC CC:PV_PT1: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.193978 CC CC:PV_PT3: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.193999 CC CC:PV_PT3: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.194021 CC CC:PV_PT3: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.195040 CC CC:PV_T5: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.195062 CC CC:PV_T5: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.195083 CC CC:PV_T5: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.196102 CC CC:PV_T6: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.196123 CC CC:PV_T6: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.196144 CC CC:PV_T6: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.197166 CC CC:Q_MV_SCALE_V10: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.197189 CC CC:Q_MV_SCALE_V10: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.197210 CC CC:Q_MV_SCALE_V10: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.198228 CC CC:Q_MV_SCALE_V11: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.198257 CC CC:Q_MV_SCALE_V11: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.198279 CC CC:Q_MV_SCALE_V11: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.199291 CC CC:Q_MV_SCALE_V19: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.199312 CC CC:Q_MV_SCALE_V19: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.199333 CC CC:Q_MV_SCALE_V19: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.200352 CC CC:Q_OP_STATE_LN2: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.200374 CC CC:Q_OP_STATE_LN2: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.200395 CC CC:Q_OP_STATE_LN2: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.201417 CC CC:Q_OP_STATE_V10: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.201440 CC CC:Q_OP_STATE_V10: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.201460 CC CC:Q_OP_STATE_V10: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.202479 CC CC:Q_OP_STATE_V11: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.202500 CC CC:Q_OP_STATE_V11: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.202521 CC CC:Q_OP_STATE_V11: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.203541 CC CC:Q_OP_STATE_V15: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.203562 CC CC:Q_OP_STATE_V15: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.203583 CC CC:Q_OP_STATE_V15: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.204602 CC CC:Q_OP_STATE_V17_100: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.204624 CC CC:Q_OP_STATE_V17_100: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.204645 CC CC:Q_OP_STATE_V17_100: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.205667 CC CC:Q_OP_STATE_V17_35: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.205690 CC CC:Q_OP_STATE_V17_35: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.205711 CC CC:Q_OP_STATE_V17_35: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.206729 CC CC:Q_OP_STATE_V19: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.206750 CC CC:Q_OP_STATE_V19: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.206771 CC CC:Q_OP_STATE_V19: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.207791 CC CC:Q_OP_STATE_V20: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.207813 CC CC:Q_OP_STATE_V20: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.207834 CC CC:Q_OP_STATE_V20: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.208854 CC CC:Q_OP_STATE_V21: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.208876 CC CC:Q_OP_STATE_V21: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.208898 CC CC:Q_OP_STATE_V21: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.209917 CC CC:Q_OP_STATE_V9: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.209938 CC CC:Q_OP_STATE_V9: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.209960 CC CC:Q_OP_STATE_V9: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.210979 CC CC:REFILL_HEATVES_STAT: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.211001 CC CC:REFILL_HEATVES_STAT: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.211022 CC CC:REFILL_HEATVES_STAT: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.212041 CC CC:Reserve01: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.212062 CC CC:Reserve01: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.212083 CC CC:Reserve01: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.213105 CC CC:Reserve02: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.213128 CC CC:Reserve02: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.213156 CC CC:Reserve02: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.214167 CC CC:Reserve03: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.214189 CC CC:Reserve03: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.214210 CC CC:Reserve03: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.215230 CC CC:Reserve04: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.215251 CC CC:Reserve04: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.215272 CC CC:Reserve04: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.216291 CC CC:Reserve05: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.216313 CC CC:Reserve05: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.216334 CC CC:Reserve05: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.217356 CC CC:Reserve06: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.217379 CC CC:Reserve06: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.217400 CC CC:Reserve06: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.218418 CC CC:Reserve07: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.218439 CC CC:Reserve07: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.218460 CC CC:Reserve07: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.219480 CC CC:Reserve08: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.219501 CC CC:Reserve08: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.219522 CC CC:Reserve08: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.220541 CC CC:Reserve09: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.220563 CC CC:Reserve09: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.220584 CC CC:Reserve09: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.221606 CC CC:Reserve10: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.221629 CC CC:Reserve10: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.221650 CC CC:Reserve10: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.222669 CC CC:Reserve11: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.222690 CC CC:Reserve11: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.222711 CC CC:Reserve11: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.223730 CC CC:Reserve12: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.223752 CC CC:Reserve12: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.223772 CC CC:Reserve12: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.224792 CC CC:Reserve13: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.224813 CC CC:Reserve13: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.224834 CC CC:Reserve13: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.225856 CC CC:Reserve17: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.225878 CC CC:Reserve17: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.225900 CC CC:Reserve17: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.226918 CC CC:Reserve35: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.226940 CC CC:Reserve35: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.226961 CC CC:Reserve35: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.227980 CC CC:Reserve36: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.228001 CC CC:Reserve36: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.228022 CC CC:Reserve36: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.229044 CC CC:Reserve37: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.229067 CC CC:Reserve37: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.229088 CC CC:Reserve37: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.230106 CC CC:Reserve38: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.230128 CC CC:Reserve38: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.230149 CC CC:Reserve38: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.231168 CC CC:Reserve39: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.231190 CC CC:Reserve39: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.231211 CC CC:Reserve39: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.232230 CC CC:Reserve40: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.232251 CC CC:Reserve40: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.232272 CC CC:Reserve40: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.233294 CC CC:Reserve41: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.233317 CC CC:Reserve41: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.233338 CC CC:Reserve41: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.234356 CC CC:Reserve42: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.234378 CC CC:Reserve42: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.234399 CC CC:Reserve42: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.235418 CC CC:StateVentPipe: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.235440 CC CC:StateVentPipe: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.235461 CC CC:StateVentPipe: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.236480 CC CC:WARM_UP_STAT: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.236502 CC CC:WARM_UP_STAT: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.236523 CC CC:WARM_UP_STAT: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.237545 CC CC:ACTION_REQUEST_BIT: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.237567 CC CC:ACTION_REQUEST_BIT: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.237588 CC CC:ACTION_REQUEST_BIT: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.238607 CC CC:AIR_PRESSURE_OK: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.238628 CC CC:AIR_PRESSURE_OK: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.238649 CC CC:AIR_PRESSURE_OK: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.239669 CC CC:CC_ENABLE: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.239690 CC CC:CC_ENABLE: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.239712 CC CC:CC_ENABLE: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.240730 CC CC:CC_NO_ALARM: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.240752 CC CC:CC_NO_ALARM: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.240773 CC CC:CC_NO_ALARM: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.241795 CC CC:CC_READY: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.241817 CC CC:CC_READY: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.241838 CC CC:CC_READY: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.242857 CC CC:CONV_LC_OFF: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.242878 CC CC:CONV_LC_OFF: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.242899 CC CC:CONV_LC_OFF: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.243918 CC CC:CONV_LC_ON: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.243940 CC CC:CONV_LC_ON: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.243961 CC CC:CONV_LC_ON: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.244983 CC CC:COOL_DOWN_ON: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.245005 CC CC:COOL_DOWN_ON: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.245026 CC CC:COOL_DOWN_ON: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.246045 CC CC:C_CTRL_AUT: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.246066 CC CC:C_CTRL_AUT: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.246087 CC CC:C_CTRL_AUT: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.247107 CC CC:FT18ActualValueFault: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.247128 CC CC:FT18ActualValueFault: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.247149 CC CC:FT18ActualValueFault: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.248169 CC CC:LN2FreqActValueFault: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.248190 CC CC:LN2FreqActValueFault: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.248211 CC CC:LN2FreqActValueFault: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.249233 CC CC:LN2FreqCtrlValueFault: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.249256 CC CC:LN2FreqCtrlValueFault: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.249277 CC CC:LN2FreqCtrlValueFault: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.250295 CC CC:LT19ActualValueFault: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.250317 CC CC:LT19ActualValueFault: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.250338 CC CC:LT19ActualValueFault: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.251357 CC CC:LT19_H_Al_Value_Tripped: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.251379 CC CC:LT19_H_Al_Value_Tripped: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.251400 CC CC:LT19_H_Al_Value_Tripped: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.252419 CC CC:LT19_H_LIM_Value_Tripped: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.252440 CC CC:LT19_H_LIM_Value_Tripped: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.252461 CC CC:LT19_H_LIM_Value_Tripped: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.253483 CC CC:LT19_L_Al_Value_Tripped: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.253506 CC CC:LT19_L_Al_Value_Tripped: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.253527 CC CC:LT19_L_Al_Value_Tripped: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.254545 CC CC:LT19_L_LIM_Value_Tripped: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.254567 CC CC:LT19_L_LIM_Value_Tripped: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.254588 CC CC:LT19_L_LIM_Value_Tripped: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.255607 CC CC:LT19_MAN_DECAY_MODE_ON: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.255629 CC CC:LT19_MAN_DECAY_MODE_ON: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.255650 CC CC:LT19_MAN_DECAY_MODE_ON: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.256670 CC CC:LT19_MAN_MODE_ON: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.256691 CC CC:LT19_MAN_MODE_ON: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.256712 CC CC:LT19_MAN_MODE_ON: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.257734 CC CC:LT23ActualValueFault: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.257757 CC CC:LT23ActualValueFault: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.257778 CC CC:LT23ActualValueFault: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.258796 CC CC:LT23_AUTOREFILL_BUTTON: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.258817 CC CC:LT23_AUTOREFILL_BUTTON: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.258839 CC CC:LT23_AUTOREFILL_BUTTON: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.259857 CC CC:LT23_AUTOREFILL_ON: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.259878 CC CC:LT23_AUTOREFILL_ON: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.259906 CC CC:LT23_AUTOREFILL_ON: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.260921 CC CC:LT23_H_Al_Value_Tripped: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.260943 CC CC:LT23_H_Al_Value_Tripped: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.260964 CC CC:LT23_H_Al_Value_Tripped: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.261983 CC CC:LT23_H_LIM_Value_Tripped: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.262005 CC CC:LT23_H_LIM_Value_Tripped: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.262026 CC CC:LT23_H_LIM_Value_Tripped: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.263045 CC CC:LT23_L_Al_Value_Tripped: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.263067 CC CC:LT23_L_Al_Value_Tripped: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.263088 CC CC:LT23_L_Al_Value_Tripped: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.264107 CC CC:LT23_L_LIM_Value_Tripped: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.264129 CC CC:LT23_L_LIM_Value_Tripped: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.264150 CC CC:LT23_L_LIM_Value_Tripped: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.265172 CC CC:NO_UPS_POWER_FAIL: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.265194 CC CC:NO_UPS_POWER_FAIL: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.265215 CC CC:NO_UPS_POWER_FAIL: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.266233 CC CC:PT1ActualValueFault: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.266255 CC CC:PT1ActualValueFault: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.266276 CC CC:PT1ActualValueFault: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.267295 CC CC:PT1_H_LIM_Value_Tripped: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.267317 CC CC:PT1_H_LIM_Value_Tripped: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.267338 CC CC:PT1_H_LIM_Value_Tripped: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.268357 CC CC:PT1_L_LIM_Value_Tripped: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.268379 CC CC:PT1_L_LIM_Value_Tripped: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.268400 CC CC:PT1_L_LIM_Value_Tripped: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.269422 CC CC:PT3ActualValueFault: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.269444 CC CC:PT3ActualValueFault: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.269465 CC CC:PT3ActualValueFault: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.270484 CC CC:PT3_H_LIM_Value_Tripped: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.270505 CC CC:PT3_H_LIM_Value_Tripped: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.270526 CC CC:PT3_H_LIM_Value_Tripped: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.271546 CC CC:PT3_L_LIM_Value_Tripped: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.271567 CC CC:PT3_L_LIM_Value_Tripped: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.271588 CC CC:PT3_L_LIM_Value_Tripped: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.272607 CC CC:REFILL_HEATVES_ON: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.272629 CC CC:REFILL_HEATVES_ON: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.272650 CC CC:REFILL_HEATVES_ON: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.273672 CC CC:Reserve14: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.273695 CC CC:Reserve14: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.273716 CC CC:Reserve14: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.274734 CC CC:Reserve15: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.274755 CC CC:Reserve15: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.274776 CC CC:Reserve15: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.275796 CC CC:Reserve21: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.275817 CC CC:Reserve21: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.275838 CC CC:Reserve21: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.276858 CC CC:Reserve22: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.276881 CC CC:Reserve22: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.276902 CC CC:Reserve22: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.277921 CC CC:Reserve23: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.277943 CC CC:Reserve23: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.277964 CC CC:Reserve23: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.278984 CC CC:Reserve24: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.279005 CC CC:Reserve24: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.279026 CC CC:Reserve24: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.280045 CC CC:Reserve25: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.280066 CC CC:Reserve25: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.280088 CC CC:Reserve25: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.281109 CC CC:Reserve26: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.281132 CC CC:Reserve26: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.281153 CC CC:Reserve26: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.282171 CC CC:Reserve27: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.282193 CC CC:Reserve27: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.282214 CC CC:Reserve27: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.283233 CC CC:Reserve28: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.283255 CC CC:Reserve28: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.283276 CC CC:Reserve28: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.284295 CC CC:Reserve29: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.284316 CC CC:Reserve29: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.284338 CC CC:Reserve29: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.285359 CC CC:Reserve30: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.285382 CC CC:Reserve30: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.285403 CC CC:Reserve30: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.286421 CC CC:Reserve31: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.286443 CC CC:Reserve31: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.286464 CC CC:Reserve31: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.287483 CC CC:Reserve32: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.287505 CC CC:Reserve32: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.287526 CC CC:Reserve32: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.288545 CC CC:Reserve33: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.288566 CC CC:Reserve33: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.288587 CC CC:Reserve33: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.289608 CC CC:Reserve34: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.289630 CC CC:Reserve34: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.289651 CC CC:Reserve34: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.587645 CC CC:Stop_ON: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.587678 CC CC:Stop_ON: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.587700 CC CC:Stop_ON: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.588701 CC CC:T5ActualValueFault: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.588723 CC CC:T5ActualValueFault: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.588744 CC CC:T5ActualValueFault: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.589763 CC CC:T5_H_LIM_Value_Tripped: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.589785 CC CC:T5_H_LIM_Value_Tripped: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.589806 CC CC:T5_H_LIM_Value_Tripped: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.590824 CC CC:T5_L_LIM_Value_Tripped: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.590845 CC CC:T5_L_LIM_Value_Tripped: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.590867 CC CC:T5_L_LIM_Value_Tripped: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.591885 CC CC:T6ActualValueFault: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.591906 CC CC:T6ActualValueFault: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.591928 CC CC:T6ActualValueFault: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.592950 CC CC:T6_H_LIM_Value_Tripped: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.592973 CC CC:T6_H_LIM_Value_Tripped: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.592994 CC CC:T6_H_LIM_Value_Tripped: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.594012 CC CC:T6_L_LIM_Value_Tripped: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.594034 CC CC:T6_L_LIM_Value_Tripped: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.594055 CC CC:T6_L_LIM_Value_Tripped: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.595074 CC CC:V10ControlValueFault: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.595096 CC CC:V10ControlValueFault: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.595117 CC CC:V10ControlValueFault: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.596136 CC CC:V11ControlValueFault: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.596157 CC CC:V11ControlValueFault: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.596179 CC CC:V11ControlValueFault: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.597201 CC CC:V19ControlValueFault: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.597223 CC CC:V19ControlValueFault: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.597244 CC CC:V19ControlValueFault: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.598263 CC CC:VALVE_CABLE_CON_OK: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.598284 CC CC:VALVE_CABLE_CON_OK: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.598306 CC CC:VALVE_CABLE_CON_OK: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.599325 CC CC:ValveManOffV15: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.599346 CC CC:ValveManOffV15: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.599367 CC CC:ValveManOffV15: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.600386 CC CC:ValveManOffV17_100: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.600408 CC CC:ValveManOffV17_100: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.600429 CC CC:ValveManOffV17_100: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.601451 CC CC:ValveManOffV17_35: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.601474 CC CC:ValveManOffV17_35: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.601495 CC CC:ValveManOffV17_35: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.602513 CC CC:ValveManOffV20: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.602542 CC CC:ValveManOffV20: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.602563 CC CC:ValveManOffV20: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.603576 CC CC:ValveManOffV21: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.603597 CC CC:ValveManOffV21: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.603618 CC CC:ValveManOffV21: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.604637 CC CC:ValveManOffV9: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.604659 CC CC:ValveManOffV9: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.604680 CC CC:ValveManOffV9: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.605702 CC CC:ValveManOnV15: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.605724 CC CC:ValveManOnV15: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.605746 CC CC:ValveManOnV15: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.606764 CC CC:ValveManOnV17_100: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.606785 CC CC:ValveManOnV17_100: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.606806 CC CC:ValveManOnV17_100: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.607825 CC CC:ValveManOnV17_35: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.607847 CC CC:ValveManOnV17_35: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.607868 CC CC:ValveManOnV17_35: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.608889 CC CC:ValveManOnV20: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.608912 CC CC:ValveManOnV20: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.608933 CC CC:ValveManOnV20: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.609952 CC CC:ValveManOnV21: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.609973 CC CC:ValveManOnV21: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.609994 CC CC:ValveManOnV21: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.611014 CC CC:ValveManOnV9: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.611035 CC CC:ValveManOnV9: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.611056 CC CC:ValveManOnV9: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.612076 CC CC:VentPipeManOff: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.612097 CC CC:VentPipeManOff: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.612118 CC CC:VentPipeManOff: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.613140 CC CC:VentPipeManOn: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.613163 CC CC:VentPipeManOn: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.613184 CC CC:VentPipeManOn: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.614202 CC CC:VentPipeOn: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.614224 CC CC:VentPipeOn: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.614245 CC CC:VentPipeOn: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.615265 CC CC:WARM_UP_ON: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.615286 CC CC:WARM_UP_ON: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.615307 CC CC:WARM_UP_ON: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.616327 CC CC:COOL_DOWN_STAT: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.616348 CC CC:COOL_DOWN_STAT: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.616369 CC CC:COOL_DOWN_STAT: Protocol aborted
+[0m[31;1m2014/07/08 16:37:52.617391 CC CC:SENSOR_CABLE_CON_OK: asynError in read: 10.0.14.209:2000 disconnected:
+[0m[31;1m2014/07/08 16:37:52.617414 CC CC:SENSOR_CABLE_CON_OK: I/O error after reading 0 bytes: ""
+[0m[31;1m2014/07/08 16:37:52.617442 CC CC:SENSOR_CABLE_CON_OK: Protocol aborted
+[0m

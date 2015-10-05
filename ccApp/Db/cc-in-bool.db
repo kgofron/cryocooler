@@ -1,0 +1,20 @@
+#(c) 2013 Bruker ASC GmbH
+record (mbbiDirect, "$(SYS){$(PDEV)$(SDEV)}$(NAME)")
+{
+        field (DESC, "{$(PDEV)$(SDEV)}$(NAME)")
+        field (DTYP, "stream")
+        field (NOBT, "1")
+        field (SHFT, "$(BIT)")
+        field (INP,  "@cc.proto read_byte($(HEAD_BYTE),$(TAIL_BYTE)) $(PORT)")
+        field (SCAN, "I/O Intr")
+	field (FLNK, "$(SYS){$(PDEV)$(SDEV)}$(NAME)_")
+}
+
+
+record (calcout, "$(SYS){$(PDEV)$(SDEV)}$(NAME)_")
+{
+	field (INPA, "$(SYS){$(PDEV)$(SDEV)}$(NAME)")
+	field (CALC, "A")
+	field (LOLO, "$(LOLO)")
+	field (LLSV, "MAJOR")
+}

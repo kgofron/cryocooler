@@ -1,0 +1,16 @@
+#(c) 2013 Bruker ASC GmbH
+
+record (ao, "$(SYS){$(PDEV)$(SDEV)}$(NAME)")
+{
+        field (DESC, "{$(PDEV)$(SDEV)}$(NAME)")
+        field (DTYP, "stream")
+        field (OUT, "0")
+        field (OUT,  "@cc.proto write($(VALUE)) $(PORT)")
+        field (SCAN, "Passive")
+        field (EGU,  "$(UNIT)")
+        field (PREC, "$(PREC)")
+
+        info(autosaveFields_pass0, "VAL EGU PREC")
+        info(autosaveFields, "VAL EGU PREC")
+}
+

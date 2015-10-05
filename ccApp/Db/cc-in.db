@@ -1,0 +1,8 @@
+#(c) 2013 Bruker ASC GmbH
+record (ai, "$(SYS){$(PDEV)$(SDEV)}$(NAME)")
+{
+        field (DESC, "{$(PDEV)$(SDEV)}$(NAME)")
+        field (DTYP, "stream")
+        field (OUT,  "@cc.proto write($(OFFSET)) $(PORT)")
+        field (SCAN, "I/O Intr")
+}

@@ -1,0 +1,594 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2014-10-22 13:58-0400\n"
+"PO-Revision-Date: 2014-10-22 13:58-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: /usr/lib/epics/dbd\n"
+"X-Poedit-SearchPath-0: /usr/lib/epics/dbd\n"
+"X-Poedit-SearchPath-1: .\n"
+
+#. recordtype: ai
+#. DESC: $(NAME)
+#: /home/wlewis/local/data/work/hg/repos/modules/cryocooler_bruker/ccApp/Db/cc-in.db:2
+msgid "CC_STOP"
+msgstr "\}Cmd:Stop-Cmd"
+
+msgid "CC_OFF"
+msgstr "\}Cmd:Off-Cmd"
+
+msgid "openV9"
+msgstr "-IV:09\}Cmd:Opn-Cmd"
+
+msgid "closeV9"
+msgstr "-IV:09\}Cmd:Cls-Cmd"
+
+msgid "openV15"
+msgstr "-IV:15\}Cmd:Opn-Cmd"
+
+msgid "closeV15"
+msgstr "-IV:15\}Cmd:Cls-Cmd"
+
+msgid "openV19"
+msgstr "-IV:19\}Cmd:Opn-Cmd"
+
+msgid "closeV19"
+msgstr "-IV:19\}Cmd:Cls-Cmd"
+
+msgid "openV20"
+msgstr "-IV:20\}Cmd:Opn-Cmd"
+
+msgid "closeV20"
+msgstr "-IV:20\}Cmd:Cls-Cmd"
+
+msgid "openV21"
+msgstr "-IV:21\}Cmd:Opn-Cmd"
+
+msgid "closeV21"
+msgstr "-IV:21\}Cmd:Cls-Cmd"
+
+msgid "setV10"
+msgstr "-IV:10\}Pos-SP"
+
+msgid "setV11"
+msgstr "-IV:11\}Pos-SP"
+
+msgid "setV19"
+msgstr "-IV:19\}Pos-SP"
+
+msgid "vp_heatON"
+msgstr "\}Cmd:HeatOn-Cmd"
+
+msgid "vp_heatOFF"
+msgstr "\}Cmd:HeatOff-Cmd"
+
+msgid "PT3ctrlON"
+msgstr "\}Mode:PT3On-Cmd"
+
+msgid "PT3ctrlOFF"
+msgstr "\}Mode:PT3Off-Cmd"
+
+msgid "pumpON"
+msgstr "-Pmp\}Cmd:On-Cmd"
+
+msgid "pumpOFF"
+msgstr "-Pmp\}Cmd:Off-Cmd"
+
+msgid "LT19_man_mode"
+msgstr "\}Mode:LT19Man-Cmd"
+
+msgid "LT19_decay_mode"
+msgstr "\}Mode:LT19Decay-Cmd"
+
+msgid "ap_cool_down"
+msgstr "\}Cmd:APCool-Cmd"
+
+msgid "ap_refill_hv"
+msgstr "\}Cmd:APFill-Cmd"
+
+msgid "ap_warm_up"
+msgstr "\}Cmd:APWarm-Cmd"
+
+msgid "setLT19_HL"
+msgstr "\}L:19Hi-SP"
+
+msgid "setLT19_LL"
+msgstr "\}L:19Lo-SP"
+
+msgid "setLT23_HL"
+msgstr "\}L:23Hi-SP"
+
+msgid "setLT23_LL"
+msgstr "\}L:23Lo-SP"
+
+msgid "setT5_HL"
+msgstr "\}T:05Hi-SP"
+
+msgid "setT5_LL"
+msgstr "\}T:05Lo-SP"
+
+msgid "setT6_HL"
+msgstr "\}T:06Hi-SP"
+
+msgid "setT6_LL"
+msgstr "\}T:06Lo-SP"
+
+msgid "setFT18_HL"
+msgstr "\}F:18Hi-SP"
+
+msgid "setFT18_LL"
+msgstr "\}F:18Lo-SP"
+
+msgid "setPT1_HL"
+msgstr "\}P:01Hi-SP"
+
+msgid "setPT1_LL"
+msgstr "\}P:01Lo-SP"
+
+msgid "setPT3_HL"
+msgstr "\}P:03Hi-SP"
+
+msgid "setPT3_LL"
+msgstr "\}P:03Lo-SP"
+
+msgid "setPT3_SP"
+msgstr "\}P:03-SP"
+
+msgid "setPump"
+msgstr "-Pmp\}Cmd:Set-Cmd"
+
+msgid "closeV17_35"
+msgstr "-IV:17_35\}Cmd:Cls-Cmd"
+
+msgid "openV17_35"
+msgstr "-IV:17_35\}Cmd:Opn-Cmd"
+
+msgid "closeV17_100"
+msgstr "-IV:17_100\}Cmd:Cls-Cmd"
+
+msgid "openV17_100"
+msgstr "-IV:17_100\}Cmd:Opn-Cmd"
+
+msgid "quit"
+msgstr "\}Cmd:Quit-Cmd"
+
+msgid "PV_FT18"
+msgstr "\}F:18-I"
+
+msgid "PV_LN2_FREQ"
+msgstr "-Pmp\}Freq-I"
+
+msgid "POWER"
+msgstr "\}Pwr-I"
+
+msgid "PV_LT19"
+msgstr "\}L:19-I"
+
+msgid "HL1_EXT_LT19"
+msgstr "\}L:19Hi-I"
+
+msgid "LL1_EXT_LT19"
+msgstr "\}L:19Lo-I"
+
+msgid "PV_LT23"
+msgstr "\}L:23-I"
+
+msgid "HL1_EXT_LT23"
+msgstr "\}L:23Hi-I"
+
+msgid "LL1_EXT_LT23"
+msgstr "\}L:23Lo-I"
+
+msgid "PV_PT1"
+msgstr "\}P:01-I"
+
+msgid "HL1_EXT_PT1"
+msgstr "\}P:01Hi-I"
+
+msgid "Reserve01"
+msgstr "\}Val:Rsrv01-I"
+
+msgid "LL1_EXT_PT1"
+msgstr "\}P:01Lo-I"
+
+msgid "Reserve02"
+msgstr "\}Val:Rsrv02-I"
+
+msgid "PV_PT3"
+msgstr "\}P:03-I"
+
+msgid "HL1_EXT_PT3"
+msgstr "\}P:03Hi-I"
+
+msgid "Reserve03"
+msgstr "\}Val:Rsrv03-I"
+
+msgid "LL1_EXT_PT3"
+msgstr "\}P:03Lo-I"
+
+msgid "Reserve04"
+msgstr "\}Val:Rsrv04-I"
+
+msgid "PV_T5"
+msgstr "\}T:05-I"
+
+msgid "HL1_EXT_T5"
+msgstr "\}T:05Hi-I"
+
+msgid "LL1_EXT_T5"
+msgstr "\}T:05Lo-I"
+
+msgid "PV_T6"
+msgstr "\}T:06-I"
+
+msgid "HL1_EXT_T6"
+msgstr "\}T:06Hi-I"
+
+msgid "LL1_EXT_T6"
+msgstr "\}T:06Lo-I"
+
+msgid "MV_MAN_V10"
+msgstr "-IV:10\}Pos-I"
+
+msgid "Reserve05"
+msgstr "\}Val:Rsrv05-I"
+
+msgid "Q_MV_SCALE_V10"
+msgstr "-IV:10\}Pos:Scale-I"
+
+msgid "MV_MAN_V11"
+msgstr "-IV:11\}Pos-I"
+
+msgid "Reserve06"
+msgstr "\}Val:Rsrv06-I"
+
+msgid "Q_MV_SCALE_V11"
+msgstr "-IV:11\}Pos:Scale-I"
+
+msgid "MV_MAN_V19"
+msgstr "-IV:19\}Pos-I"
+
+msgid "Reserve07"
+msgstr "\}Val:Rsrv07-I"
+
+msgid "Q_MV_SCALE_V19"
+msgstr "-IV:19\}Pos:Scale-I"
+
+msgid "C_CTRL_SP_INT"
+msgstr "\}Val:C-RB"
+
+msgid "C_CTRL_PV"
+msgstr "\}Val:C-I"
+
+msgid "Reserve08"
+msgstr "\}Val:Rsrv08-I"
+
+msgid "Reserve09"
+msgstr "\}Val:Rsrv09-I"
+
+msgid "Reserve10"
+msgstr "\}Val:Rsrv10-I"
+
+msgid "Reserve11"
+msgstr "\}Val:Rsrv11-I"
+
+msgid "Reserve12"
+msgstr "\}Val:Rsrv12-I"
+
+msgid "Reserve35"
+msgstr "\}Val:Rsrv35-I"
+
+msgid "Reserve36"
+msgstr "\}Val:Rsrv36-I"
+
+msgid "Reserve37"
+msgstr "\}Val:Rsrv37-I"
+
+msgid "Reserve38"
+msgstr "\}Val:Rsrv38-I"
+
+msgid "Reserve39"
+msgstr "\}Val:Rsrv39-I"
+
+msgid "Reserve40"
+msgstr "\}Val:Rsrv40-I"
+
+msgid "Reserve41"
+msgstr "\}Val:Rsrv41-I"
+
+msgid "Reserve42"
+msgstr "\}Val:Rsrv42-I"
+
+file /home/epics/cc/ccApp/Db/cc-in-int.db {
+    pattern{NAME, HEAD_BYTE, TAIL_BYTE\}
+msgid "Reserve13"
+msgstr "\}Val:Rsrv13-I"
+
+msgid "Q_OP_STATE_V9"
+msgstr "-IV:09\}Sts-Sts"
+
+msgid "Q_OP_STATE_V15"
+msgstr "-IV:15\}Sts-Sts"
+
+msgid "Q_OP_STATE_V17_35"
+msgstr "-IV:17_35\}Sts-Sts"
+
+msgid "Q_OP_STATE_V20"
+msgstr "-IV:20\}Sts-Sts"
+
+msgid "Q_OP_STATE_V21"
+msgstr "-IV:21\}Sts-Sts"
+
+msgid "StateVentPipe"
+msgstr "\}Sts:VP-Sts"
+
+msgid "Q_OP_STATE_LN2"
+msgstr "-Pmp\}Sts-Sts"
+
+msgid "Q_OP_STATE_V10"
+msgstr "-IV:10\}Sts-Sts"
+
+msgid "Q_OP_STATE_V11"
+msgstr "-IV:11\}Sts-Sts"
+
+msgid "Q_OP_STATE_V19"
+msgstr "-IV:19\}Sts-Sts"
+
+msgid "COOL_DOWN_STAT"
+msgstr "\}Sts:CoolDown-Sts"
+
+msgid "WARM_UP_STAT"
+msgstr "\}Sts:WarmUp-Sts"
+
+msgid "REFILL_HEATVES_STAT"
+msgstr "\}Sts:Refill-Sts"
+
+msgid "Q_OP_STATE_V17_100"
+msgstr "-IV:17_100\}Sts-Sts"
+
+msgid "Reserve17"
+msgstr "\}Val:Rsrv17-I"
+
+\}
+
+file /home/epics/cc/ccApp/Db/cc-in-bool.db {
+    pattern{NAME, HEAD_BYTE, BIT, TAIL_BYTE\}
+msgid "T5ActualValueFault"
+msgstr "\}Flt:T05-Sts"
+
+msgid "T6ActualValueFault"
+msgstr "\}Flt:T06-Sts"
+
+msgid "PT1ActualValueFault"
+msgstr "\}Flt:P01-Sts"
+
+msgid "PT3ActualValueFault"
+msgstr "\}Flt:P03-Sts"
+
+msgid "LT19ActualValueFault"
+msgstr "\}Flt:L19-Sts"
+
+msgid "LT23ActualValueFault"
+msgstr "\}Flt:L23-Sts"
+
+msgid "FT18ActualValueFault"
+msgstr "\}Flt:F18-Sts"
+
+msgid "LN2FreqActValueFault"
+msgstr "\}Flt:LN2Freq-Sts"
+
+msgid "LN2FreqCtrlValueFault"
+msgstr "\}Flt:LN2FreqCtrl-Sts"
+
+msgid "V10ControlValueFault"
+msgstr "-IV:10\}Flt-Sts"
+
+msgid "V11ControlValueFault"
+msgstr "-IV:11\}Flt-Sts"
+
+msgid "V19ControlValueFault"
+msgstr "-IV:19\}Flt-Sts"
+
+msgid "AIR_PRESSURE_OK"
+msgstr "\}P:Air-Sts"
+
+msgid "SENSOR_CABLE_CON_OK"
+msgstr "\}Sts:SensCable-Sts"
+
+msgid "VALVE_CABLE_CON_OK"
+msgstr "\}Sts:VlvCable-Sts"
+
+msgid "Reserve14"
+msgstr "\}Val:Rsrv14-I"
+
+msgid "ValveManOnV9"
+msgstr "-IV:09\}Mode:ManOn-Sts"
+
+msgid "ValveManOffV9"
+msgstr "-IV:09\}Mode:ManOff-Sts"
+
+msgid "ValveManOnV15"
+msgstr "-IV:15\}Mode:ManOn-Sts"
+
+msgid "ValveManOffV15"
+msgstr "-IV:15\}Mode:ManOff-Sts"
+
+msgid "ACTION_REQUEST_BIT"
+msgstr "\}Req:Action-Sts"
+
+msgid "Reserve15"
+msgstr "\}Val:Rsrv15-I"
+
+msgid "ValveManOnV20"
+msgstr "-IV:20\}Mode:ManOn-Sts"
+
+msgid "ValveManOffV20"
+msgstr "-IV:20\}Mode:ManOff-Sts"
+
+msgid "ValveManOnV21"
+msgstr "-IV:21\}Mode:ManOn-Sts"
+
+msgid "ValveManOffV21"
+msgstr "-IV:21\}Mode:ManOff-Sts"
+
+msgid "CONV_LC_OFF"
+msgstr "\}Sts:ConvLCOff-Sts"
+
+msgid "CONV_LC_ON"
+msgstr "\}Sts:ConvLCOn-Sts"
+
+msgid "VentPipeManOff"
+msgstr "\}Sts:VPManOff-Sts"
+
+msgid "VentPipeManOn"
+msgstr "\}Sts:VPManOn-Sts"
+
+msgid "VentPipeOn"
+msgstr "\}Sts:VPOn-Sts"
+
+msgid "C_CTRL_AUT"
+msgstr "\}Mode:CCtrlAuto-Sts"
+
+msgid "Stop_ON"
+msgstr "\}Sts:Stop-Sts"
+
+msgid "LT19_MAN_MODE_ON"
+msgstr "-L:19\}Mode:Man-Sts"
+
+msgid "LT19_MAN_DECAY_MODE_ON"
+msgstr "-L:19\}Mode:Decay-Sts"
+
+msgid "CC_NO_ALARM"
+msgstr "\}Alrm:None-Sts"
+
+msgid "CC_ENABLE"
+msgstr "\}Enbl-Sts"
+
+msgid "CC_READY"
+msgstr "\}Rdy-Sts"
+
+msgid "ValveManOnV17_35"
+msgstr "-IV:17_35\}Mode:ManOn-Sts"
+
+msgid "ValveManOffV17_35"
+msgstr "-IV:17_35\}Mode:ManOff-Sts"
+
+msgid "LT19_H_LIM_Value_Tripped"
+msgstr "-L:19\}Trip:Hi-Sts"
+
+msgid "LT19_L_LIM_Value_Tripped"
+msgstr "-L:19\}Trip:Lo-Sts"
+
+msgid "LT19_H_Al_Value_Tripped"
+msgstr "-L:19\}Alrm:Hi-Sts"
+
+msgid "LT19_L_Al_Value_Tripped"
+msgstr "-L:19\}Alrm:Lo-Sts"
+
+msgid "LT23_H_LIM_Value_Tripped"
+msgstr "-L:19\}Trip:Hi-Sts"
+
+msgid "LT23_L_LIM_Value_Tripped"
+msgstr "-L:23\}Trip:Lo-Sts"
+
+msgid "LT23_H_Al_Value_Tripped"
+msgstr "-L:23\}Alrm:Hi-Sts"
+
+msgid "LT23_L_Al_Value_Tripped"
+msgstr "-L:23\}Alrm:Lo-Sts"
+
+msgid "T5_H_LIM_Value_Tripped"
+msgstr "-T:05\}Trip:Hi-Sts"
+
+msgid "T5_L_LIM_Value_Tripped"
+msgstr "-T:05\}Trip:Lo-Sts"
+
+msgid "T6_H_LIM_Value_Tripped"
+msgstr "-T:06\}Trip:Hi-Sts"
+
+msgid "T6_L_LIM_Value_Tripped"
+msgstr "-T:06\}Trip:Lo-Sts"
+
+msgid "PT1_H_LIM_Value_Tripped"
+msgstr "-P:01\}Trip:Hi-Sts"
+
+msgid "PT1_L_LIM_Value_Tripped"
+msgstr "-P:01\}Trip:Lo-Sts"
+
+msgid "PT3_H_LIM_Value_Tripped"
+msgstr "-P:03\}Trip:Hi-Sts"
+
+msgid "PT3_L_LIM_Value_Tripped"
+msgstr "-P:03\}Trip:Lo-Sts"
+
+msgid "COOL_DOWN_ON"
+msgstr "\}Sts:CoolDown-Sts"
+
+msgid "WARM_UP_ON"
+msgstr "\}Sts:WarmUp-Sts"
+
+msgid "REFILL_HEATVES_ON"
+msgstr "\}Sts:Refill-Sts"
+
+msgid "NO_UPS_POWER_FAIL"
+msgstr "\}Sts:UPS-Sts"
+
+msgid "LT23_AUTOREFILL_ON"
+msgstr "-L:23\}Mode:AutoRefill-Sts"
+
+msgid "LT23_AUTOREFILL_BUTTON"
+msgstr "-L:23\}Sts:AutoRefill-Sts"
+
+msgid "ValveManOnV17_100"
+msgstr "-IV:17_100\}Mode:ManOn-Sts"
+
+msgid "ValveManOffV17_100"
+msgstr "-IV:17\}Mode:ManOn-Sts"
+
+msgid "Reserve21"
+msgstr "\}Val:Rsrv21-I"
+
+msgid "Reserve22"
+msgstr "\}Val:Rsrv22-I"
+
+msgid "Reserve23"
+msgstr "\}Val:Rsrv23-I"
+
+msgid "Reserve24"
+msgstr "\}Val:Rsrv24-I"
+
+msgid "Reserve25"
+msgstr "\}Val:Rsrv25-I"
+
+msgid "Reserve26"
+msgstr "\}Val:Rsrv26-I"
+
+msgid "Reserve27"
+msgstr "\}Val:Rsrv27-I"
+
+msgid "Reserve28"
+msgstr "\}Val:Rsrv28-I"
+
+msgid "Reserve29"
+msgstr "\}Val:Rsrv29-I"
+
+msgid "Reserve30"
+msgstr "\}Val:Rsrv30-I"
+
+msgid "Reserve31"
+msgstr "\}Val:Rsrv31-I"
+
+msgid "Reserve32"
+msgstr "\}Val:Rsrv32-I"
+
+msgid "Reserve33"
+msgstr "\}Val:Rsrv33-I"
+
+msgid "Reserve34"
+msgstr "\}Val:Rsrv34-I"
+

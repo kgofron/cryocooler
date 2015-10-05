@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd iocBoot/ioccc/
+xterm -bg white -fg black -e ./st.cmd

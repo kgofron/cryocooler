@@ -1,0 +1,10 @@
+#(c) 2013 Bruker ASC GmbH
+record (ai, "$(SYS){$(PDEV)$(SDEV)}$(NAME)")
+{
+        field (DESC, "{$(PDEV)$(SDEV)}$(NAME)")
+        field (DTYP, "stream")
+        field (INP,  "@cc.proto read_real_drip $(PORT)")
+        field (SCAN, "I/O Intr")
+	field (EGU,  "$(UNIT)")	
+	field (PREC, "$(PREC)")	
+}
