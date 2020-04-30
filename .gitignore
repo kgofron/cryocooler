@@ -1,0 +1,8 @@
+*~
+.hg/
+.hgignore
+bin/
+db/
+dbd/
+lib/
+records.dbl
