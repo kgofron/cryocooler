@@ -17,6 +17,11 @@ DB += cc-in-real.db
 DB += cc-in-real-drip.db
 DB += cc-in.db
 DB += cc-out.db
+# BEGIN ANSIBLE MANAGED BLOCK
+ifneq ($(RECCASTER),)
+DB_INSTALLS += $(RECCASTER)/db/reccaster.db
+endif
+# END ANSIBLE MANAGED BLOCK
 
 #----------------------------------------------------
 # If <anyname>.db template is not named <anyname>*.template add

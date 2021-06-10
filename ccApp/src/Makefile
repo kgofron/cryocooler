@@ -14,6 +14,12 @@ DBD += cc.dbd
 
 # cc.dbd will be made up from these files:
 cc_DBD += base.dbd
+# BEGIN ANSIBLE MANAGED BLOCK
+ifneq ($(RECCASTER),)
+cc_DBD += reccaster.dbd
+cc_LIBS += reccaster
+endif
+# END ANSIBLE MANAGED BLOCK
 
 # Include dbd files from all support applications:
 #cc_DBD += xxx.dbd
@@ -43,8 +49,20 @@ include $(TOP)/configure/RULES
 # Include stream device support dbd
 cc_DBD += asyn.dbd
 cc_DBD += drvAsynSerialPort.dbd
+#cc_DBD += stream.dbd
+
+cc_DBD += drvAsynIPPort.dbd
+cc_DBD += devIocStats.dbd
+cc_DBD += calcSupport.dbd
+cc_DBD += asSupport.dbd
 cc_DBD += stream.dbd
+
 # Include stream device support libs
 cc_LIBS += asyn
 cc_LIBS += stream
-cc_DBD += drvAsynIPPort.dbd
+
+cc_LIBS += calc
+cc_LIBS += autosave
+cc_LIBS += devIocStats
+
+

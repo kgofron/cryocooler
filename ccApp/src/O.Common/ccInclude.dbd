@@ -1,5 +1,0 @@
-include "base.dbd"
-include "asyn.dbd"
-include "drvAsynSerialPort.dbd"
-include "stream.dbd"
-include "drvAsynIPPort.dbd"

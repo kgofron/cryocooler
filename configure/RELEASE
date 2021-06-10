@@ -25,6 +25,10 @@ TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
 #SNCSEQ=$(EPICS_BASE)/../modules/soft/seq
 
 # EPICS_BASE usually appears last so other apps can override stuff:
+# BEGIN ANSIBLE MANAGED BLOCK
+# RecSync support
+RECCASTER=$(EPICS_BASE)
+# END ANSIBLE MANAGED BLOCK
 EPICS_BASE=/usr/lib/epics
 
 # Set RULES here if you want to take build rules from somewhere
