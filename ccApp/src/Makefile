@@ -14,12 +14,11 @@ DBD += cc.dbd
 
 # cc.dbd will be made up from these files:
 cc_DBD += base.dbd
-# BEGIN ANSIBLE MANAGED BLOCK
+
 ifneq ($(RECCASTER),)
 cc_DBD += reccaster.dbd
 cc_LIBS += reccaster
 endif
-# END ANSIBLE MANAGED BLOCK
 
 # Include dbd files from all support applications:
 #cc_DBD += xxx.dbd
