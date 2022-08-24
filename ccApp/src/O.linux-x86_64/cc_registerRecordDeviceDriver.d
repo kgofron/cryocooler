@@ -1,16 +1,27 @@
 cc_registerRecordDeviceDriver.o: cc_registerRecordDeviceDriver.cpp \
- /usr/lib/epics/include/compilerDependencies.h \
- /usr/lib/epics/include/compiler/gcc/compilerSpecific.h \
- /usr/lib/epics/include/epicsStdlib.h /usr/lib/epics/include/shareLib.h \
- /usr/lib/epics/include/os/Linux/osdStrtod.h \
- /usr/lib/epics/include/epicsTypes.h \
- /usr/lib/epics/include/compilerDependencies.h \
- /usr/lib/epics/include/errMdef.h /usr/lib/epics/include/iocsh.h \
- /usr/lib/epics/include/iocshRegisterCommon.h \
- /usr/lib/epics/include/registryCommon.h \
- /usr/lib/epics/include/dbStaticLib.h /usr/lib/epics/include/dbFldTypes.h \
- /usr/lib/epics/include/dbBase.h /usr/lib/epics/include/ellLib.h \
- /usr/lib/epics/include/dbDefs.h /usr/lib/epics/include/link.h \
- /usr/lib/epics/include/cantProceed.h /usr/lib/epics/include/devSup.h \
- /usr/lib/epics/include/registryRecordType.h \
- /usr/lib/epics/include/recSup.h
+ /epics/src/RHEL8/support/../base/include/compilerDependencies.h \
+ /epics/src/RHEL8/support/../base/include/compiler/gcc/compilerSpecific.h \
+ /epics/src/RHEL8/support/../base/include/epicsStdlib.h \
+ /epics/src/RHEL8/support/../base/include/libComAPI.h \
+ /epics/src/RHEL8/support/../base/include/os/Linux/osdStrtod.h \
+ /epics/src/RHEL8/support/../base/include/epicsTypes.h \
+ /epics/src/RHEL8/support/../base/include/compilerDependencies.h \
+ /epics/src/RHEL8/support/../base/include/errMdef.h \
+ /epics/src/RHEL8/support/../base/include/iocsh.h \
+ /epics/src/RHEL8/support/../base/include/iocshRegisterCommon.h \
+ /epics/src/RHEL8/support/../base/include/dbCoreAPI.h \
+ /epics/src/RHEL8/support/../base/include/registryCommon.h \
+ /epics/src/RHEL8/support/../base/include/dbStaticLib.h \
+ /epics/src/RHEL8/support/../base/include/dbFldTypes.h \
+ /epics/src/RHEL8/support/../base/include/dbBase.h \
+ /epics/src/RHEL8/support/../base/include/ellLib.h \
+ /epics/src/RHEL8/support/../base/include/dbDefs.h \
+ /epics/src/RHEL8/support/../base/include/recSup.h \
+ /epics/src/RHEL8/support/../base/include/devSup.h \
+ /epics/src/RHEL8/support/../base/include/link.h \
+ /epics/src/RHEL8/support/../base/include/cantProceed.h \
+ /epics/src/RHEL8/support/../base/include/dbJLink.h \
+ /epics/src/RHEL8/support/../base/include/dbCoreAPI.h \
+ /epics/src/RHEL8/support/../base/include/registryRecordType.h \
+ /epics/src/RHEL8/support/../base/include/recSup.h \
+ /epics/src/RHEL8/support/../base/include/shareLib.h

@@ -1,11 +1,17 @@
-ccMain.o: ../ccMain.cpp /usr/lib/epics/include/epicsExit.h \
- /usr/lib/epics/include/shareLib.h /usr/lib/epics/include/epicsThread.h \
- /usr/lib/epics/include/shareLib.h /usr/lib/epics/include/epicsEvent.h \
- /usr/lib/epics/include/os/Linux/osdEvent.h \
- /usr/lib/epics/include/epicsMutex.h /usr/lib/epics/include/epicsAssert.h \
- /usr/lib/epics/include/compilerDependencies.h \
- /usr/lib/epics/include/compiler/gcc/compilerSpecific.h \
- /usr/lib/epics/include/os/Linux/osdMutex.h \
- /usr/lib/epics/include/os/Linux/osdThread.h \
- /usr/lib/epics/include/ellLib.h /usr/lib/epics/include/epicsEvent.h \
- /usr/lib/epics/include/iocsh.h
+ccMain.o: ../ccMain.cpp \
+ /epics/src/RHEL8/support/../base/include/epicsExit.h \
+ /epics/src/RHEL8/support/../base/include/libComAPI.h \
+ /epics/src/RHEL8/support/../base/include/epicsThread.h \
+ /epics/src/RHEL8/support/../base/include/libComAPI.h \
+ /epics/src/RHEL8/support/../base/include/compilerDependencies.h \
+ /epics/src/RHEL8/support/../base/include/compiler/gcc/compilerSpecific.h \
+ /epics/src/RHEL8/support/../base/include/epicsEvent.h \
+ /epics/src/RHEL8/support/../base/include/os/Linux/osdEvent.h \
+ /epics/src/RHEL8/support/../base/include/epicsMutex.h \
+ /epics/src/RHEL8/support/../base/include/epicsAssert.h \
+ /epics/src/RHEL8/support/../base/include/epicsGuard.h \
+ /epics/src/RHEL8/support/../base/include/os/Linux/osdMutex.h \
+ /epics/src/RHEL8/support/../base/include/os/Linux/osdThread.h \
+ /epics/src/RHEL8/support/../base/include/ellLib.h \
+ /epics/src/RHEL8/support/../base/include/epicsEvent.h \
+ /epics/src/RHEL8/support/../base/include/iocsh.h
